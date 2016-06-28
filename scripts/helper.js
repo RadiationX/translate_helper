@@ -61,7 +61,7 @@ function replaceValues() {
     //Тернарный оператор используется для исключения полей с переведенными переменными
     for (var i = 0; i < strings.length; i++)
         result += '\t' + strings[i] + (
-            /@[^\/]*\//i.test(newValues[i]) ? values[i] : newValues[i]) + '<\/string\n';
+            /@[^\/]*\//i.test(newValues[i]) ? values[i] : newValues[i]) + '<\/string>\n';
     result += '<\/resources>';
     document.getElementById("output_translated").value = result;
 }
