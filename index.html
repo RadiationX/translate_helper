@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Translate Helper</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/helper.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="block">
+            <div class="title">Сортировка значений (по name)</div>
+            <div class="desc">Введите содержание файла strings.xml:</div>
+            <textarea id="input" rows="10"></textarea>
+            <div class="desc">Отсортированные данные strings.xml:</div>
+            <textarea id="output" rows="10"></textarea>
+            <input type="button" value="Отсортировать" onclick="find();">
+        </div>
+
+
+        <div class="block">
+            <div class="title">Перевод</div>
+            <div class="desc">Скопируйте этот текст в переводчик:</div>
+            <textarea id="out_to_translate" rows="10"></textarea>
+            <div class="desc">Вставьте в это поле результат перевода:</div>
+            <textarea id="in_to_translate" rows="10"></textarea>
+            <div class="desc">Переведенные string:</div>
+            <textarea id="output_translated" rows="10"></textarea>
+            <input type="button" value="Перевести" onclick="replaceValues();">
+        </div>
+    </div>
+    <div class="footer">Created by <a href="https://github.com/RadiationX">radiationx</a> / <a href="http://4pda.ru/forum/index.php?showuser=2556269">radiation15</a></div>
+</body>
+
+</html>
